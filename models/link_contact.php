@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'clients'; // Update if different
+$dbname = 'clients'; 
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
@@ -14,9 +14,9 @@ if ($conn->connect_error) {
 
 // Check if the request is a POST request
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Sanitize and validate inputs
-    $contactId = intval($_POST['contact']); // Ensure it's an integer
-    $clientId = intval($_POST['client']);  // Ensure it's an integer
+    // Sanitize and validate inputs, ensuring its an integer
+    $contactId = intval($_POST['contact']); 
+    $clientId = intval($_POST['client']);  
 
     if (empty($contactId) || empty($clientId)) {
         die("Error: Both Contact and Client must be selected.");

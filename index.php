@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'clients'; // Update if your DB name is different
+$dbname = 'clients'; 
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
@@ -69,7 +69,7 @@ if (!$contacts) {
                     <th>Client Name</th>
                     <th>Client Code</th>
                     <th class="center">No. of Contacts</th>
-                    <th class="center"></th> <!-- Add Actions column -->
+                    <th class="center"></th> 
                 </tr>
             </thead>
             <tbody>
@@ -87,7 +87,7 @@ if (!$contacts) {
                     <?php endwhile; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="4">No client(s) found.</td> <!-- Adjust colspan -->
+                        <td colspan="4">No client(s) found.</td> 
                     </tr>
                 <?php endif; ?>
             </tbody>

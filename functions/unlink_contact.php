@@ -1,11 +1,9 @@
 <?php
-// unlink_contact.php
-
-// Database connection (same as in your main code)
+// Database connection 
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'clients'; // Update if your DB name is different
+$dbname = 'clients'; 
 
 $conn = new mysqli($host, $user, $password, $dbname);
 

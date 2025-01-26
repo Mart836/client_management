@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'clients'; // Update if your DB name is different
+$dbname = 'clients'; 
 
 $conn = new mysqli($host, $user, $password, $dbname);
 
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 
 // Fetch client by ID for editing
 if (isset($_GET['id'])) {
-    $clientId = (int)$_GET['id']; // Ensure it's an integer to avoid SQL injection
+    $clientId = (int)$_GET['id']; // Ensuring it's an integer to avoid SQL injection
     $clientQuery = "SELECT * FROM clients WHERE id = $clientId";
     $clientResult = $conn->query($clientQuery);
 
