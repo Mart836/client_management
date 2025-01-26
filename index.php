@@ -68,7 +68,7 @@ if (!$contacts) {
                 <tr>
                     <th>Client Name</th>
                     <th>Client Code</th>
-                    <th class="center">No. of Contacts</th>
+                    <th class="center">No. of Contacts Linked</th>
                     <th class="center"></th> 
                 </tr>
             </thead>
