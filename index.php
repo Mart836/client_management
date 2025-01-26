@@ -166,7 +166,6 @@ if (!$contacts) {
                         echo '<td>' . htmlspecialchars($contact['email']) . '</td>';
                         echo '<td>' . htmlspecialchars($clientName) . '</td>';
                         echo '<td class="center">';
-                        echo '<a href="functions/edit_contact.php?id=' . $contact['id'] . '">Edit</a> ';
                         echo '<a href="functions/delete_contact.php?id=' . $contact['id'] . '" onclick="return confirm(\'Are you sure you want to delete this contact?\')">Delete</a>';
 
                         // Show Unlink option if the contact is linked to a client

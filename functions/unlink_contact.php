@@ -23,11 +23,12 @@ if ($client_id > 0 && $contact_id > 0) {
     $stmt->bind_param("ii", $client_id, $contact_id);
     
     if ($stmt->execute()) {
-        echo "Contact unlinked successfully.";
+        echo "<script>alert('Contact unlinked successfully.'); window.location.href = '../index.php#contacts';</script>";
     } else {
-        echo "Error unlinking contact: " . $stmt->error;
+        echo "<script>alert('Error unlinking contact: " . $stmt->error . "'); window.location.href = '../index.php#contacts';</script>";
     }
     $stmt->close();
+    
 } else {
     echo "Invalid parameters.";
 }

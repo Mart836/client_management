@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
         // Now, delete the client from the clients table
         $deleteClientQuery = "DELETE FROM clients WHERE id = $clientId";
         if ($conn->query($deleteClientQuery)) {
-            header("Location: index.php"); // Redirect to the client list
+            header("Location: ../index.php"); // Redirect to the client list
             exit();
         } else {
             echo "Error deleting client: " . $conn->error;
