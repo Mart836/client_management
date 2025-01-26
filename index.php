@@ -54,7 +54,6 @@ if (!$contacts) {
 
     <!-- General Tab -->
     <div id="general" class="content active">
-        <h2>Clients</h2>
         <button onclick="toggleForm('addClientForm')">Add New Client</button>
         <div id="addClientForm" class="form-section">
             <form method="POST" action="models/add_client.php">
@@ -96,7 +95,6 @@ if (!$contacts) {
 
     <!-- Contacts Tab -->
     <div id="contacts" class="content">
-        <h2>Contacts</h2>
         <button onclick="toggleForm('addContactForm')">Add New Contact</button>
         <div id="addContactForm" class="form-section">
             <form method="POST" action="models/add_contact.php">
