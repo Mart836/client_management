@@ -147,8 +147,6 @@ $conn->close();
 
             <button type="submit">Update Client</button>
         </form>
-
-        <a href="index.php?tab=general" class="back-link">Back to Client List</a>
     </div>
 </body>
 </html>
