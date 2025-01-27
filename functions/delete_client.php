@@ -16,10 +16,10 @@ if ($conn->connect_error) {
 if (isset($_GET['id'])) {
     $clientId = $_GET['id'];
 
-    // First, delete related contacts from the client_contact table
+    // delete related contacts from the client_contact table
     $deleteContactsQuery = "DELETE FROM client_contact WHERE client_id = $clientId";
     if ($conn->query($deleteContactsQuery)) {
-        // Now, delete the client from the clients table
+        //delete the client from the clients table
         $deleteClientQuery = "DELETE FROM clients WHERE id = $clientId";
         if ($conn->query($deleteClientQuery)) {
             header("Location: ../index.php"); // Redirect to the client list

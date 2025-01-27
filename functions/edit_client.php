@@ -60,7 +60,6 @@ $conn->close();
     <link rel="stylesheet" href="assets/edit.css">
     <title>Edit Client</title>
     <style>
-        /* Add your existing styles here */
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
